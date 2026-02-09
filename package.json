@@ -2,7 +2,7 @@
   "name": "no-jack-zone",
   "displayName": "No jack zone",
   "version": "0.0.1",
-  "description": "NoJack Zone prevents websites from hijacking your browser's keyboard shortcuts. This anti-jackware extension protects essential shortcuts like Ctrl+F, Alt+Left, and Ctrl+C from being overridden by sites. When a site attempts to hijack your shortcuts, NoJack Zone automatically re-jacks control back to you, ensuring your browser functions exactly as intended.",
+  "description": "NoJack Zone prevents websites from hijacking your browser's keyboard shortcuts.",
   "author": "Jonas Fröller",
   "scripts": {
     "dev": "plasmo dev",
