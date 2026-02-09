@@ -1,0 +1,372 @@
+@import url('https://api.fonts.coollabs.io/css2?family=Outfit:wght@400;500;600;700&display=swap');
+
+:root {
+  --primary: #f9017b;
+  --primary-glow: rgba(249, 1, 123, 0.3);
+  --primary-dark: #c70163;
+  --bg-dark: #0a0a0b;
+  --bg-surface: #141416;
+  --bg-elevated: #1c1c1f;
+  --border: #2a2a2e;
+  --border-light: #3a3a3e;
+  --text: #ffffff;
+  --text-muted: #9ca3af;
+  --success: #22c55e;
+  --danger: #ef4444;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background: var(--bg-dark);
+  color: var(--text);
+  width: 340px;
+  min-height: 420px;
+  overflow-x: hidden;
+}
+
+.popup {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-icon {
+  width: 24px;
+  height: 24px;
+  color: var(--primary);
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--text) 0%, var(--text-muted) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Toggle Switch */
+.toggle-container {
+  position: relative;
+}
+
+.toggle {
+  appearance: none;
+  width: 52px;
+  height: 28px;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.toggle::before {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 20px;
+  height: 20px;
+  background: var(--text-muted);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.toggle:checked {
+  background: var(--primary);
+  border-color: var(--primary);
+}
+
+.toggle:checked::before {
+  left: 27px;
+  background: var(--text);
+}
+
+/* Stats Card */
+.stats-card {
+  background: linear-gradient(135deg, var(--bg-surface) 0%, var(--bg-elevated) 100%);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.stats-icon {
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+.stats-icon-svg {
+  width: 24px;
+  height: 24px;
+  color: #fff;
+}
+
+.stats-content {
+  flex: 1;
+}
+
+.stats-number {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.stats-label {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+/* Section */
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.section-header {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Shortcuts List */
+.shortcuts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  max-height: 200px;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+
+.shortcuts-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.shortcuts-list::-webkit-scrollbar-track {
+  background: var(--bg-surface);
+  border-radius: 3px;
+}
+
+.shortcuts-list::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 3px;
+}
+
+.shortcuts-list::-webkit-scrollbar-thumb:hover {
+  background: var(--border-light);
+}
+
+.shortcut-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  background: var(--bg-surface);
+  border: 1px solid transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.shortcut-item:hover {
+  background: var(--bg-elevated);
+  border-color: var(--border);
+}
+
+.shortcut-item.disabled {
+  opacity: 0.5;
+}
+
+.shortcut-checkbox {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  background: var(--bg-elevated);
+  border: 2px solid var(--border);
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.shortcut-checkbox:checked {
+  background: var(--primary);
+  border-color: var(--primary);
+}
+
+.shortcut-checkbox:checked::after {
+  content: '✓';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--text);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.shortcut-key {
+  font-size: 12px;
+  font-weight: 600;
+  background: var(--bg-dark);
+  color: var(--text);
+  padding: 4px 8px;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+  min-width: 70px;
+  text-align: center;
+}
+
+.shortcut-label {
+  font-size: 14px;
+  color: var(--text-muted);
+  flex: 1;
+}
+
+.shortcut-category {
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 3px 6px;
+  border-radius: 4px;
+  background: var(--bg-dark);
+  color: var(--text-muted);
+}
+
+.shortcut-category.browser {
+  color: #60a5fa;
+}
+
+.shortcut-category.editing {
+  color: #34d399;
+}
+
+.shortcut-category.navigation {
+  color: #fbbf24;
+}
+
+/* Site Info */
+.site-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 14px 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.site-favicon {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  background: var(--bg-elevated);
+}
+
+.site-domain {
+  font-size: 14px;
+  font-weight: 500;
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.whitelist-btn {
+  font-family: 'Outfit', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--bg-elevated);
+  color: var(--text);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.whitelist-btn:hover {
+  background: var(--bg-dark);
+  border-color: var(--border-light);
+}
+
+.whitelist-btn.active {
+  background: var(--primary);
+  border-color: var(--primary);
+}
+
+/* Footer */
+.footer {
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.footer-link {
+  font-size: 12px;
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-link:hover {
+  color: var(--primary);
+}
+
+/* Disabled state */
+.popup.disabled .stats-card,
+.popup.disabled .shortcuts-list,
+.popup.disabled .site-card {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+/* Animations */
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+.stats-card.pulse {
+  animation: pulse 0.3s ease;
+}
