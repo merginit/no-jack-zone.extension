@@ -11,6 +11,14 @@
     </span>
 </div>
 
+<br />
+
+<div align="center">
+  <img src="./assets/preview.png" alt="Preview" />
+</div>
+
+<br />
+
 ## Development
 
 Run the development server:
