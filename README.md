@@ -1,33 +1,34 @@
-This is a [Plasmo extension](https://docs.plasmo.com/) project bootstrapped with [`plasmo init`](https://www.npmjs.com/package/plasmo).
+# NoJack Zone
 
-## Getting Started
+<div align="center">
+    <img src="./assets/logo.png" alt="icon" width="150" />
+</div>
 
-First, run the development server:
+<div align="center" style="margin-bottom: 2.5rem;">
+    <span style="font-size: 2.5rem;">
+      <b><strong style="font-size: 5rem;">NoJack Zone</strong></b>
+      <br>"NoJack Zone prevents websites from hijacking your browser's keyboard shortcuts. This anti-jackware extension protects essential shortcuts like Ctrl+F, Alt+Left, and Ctrl+C from being overridden by sites. When a site attempts to hijack your shortcuts, NoJack Zone automatically re-jacks control back to you, ensuring your browser functions exactly as intended."
+    </span>
+</div>
+
+## Development
+
+Run the development server:
 
 ```bash
-pnpm dev
-# or
-npm run dev
+pnpm dev # `build/chrome-mv3-dev`
 ```
 
-Open your browser and load the appropriate development build. For example, if you are developing for the chrome browser, using manifest v3, use: `build/chrome-mv3-dev`.
+[Documentation](https://docs.plasmo.com)
 
-You can start editing the popup by modifying `popup.tsx`. It should auto-update as you make changes. To add an options page, simply add a `options.tsx` file to the root of the project, with a react component default exported. Likewise to add a content page, add a `content.ts` file to the root of the project, importing some module and do some logic, then reload the extension on your browser.
-
-For further guidance, [visit our Documentation](https://docs.plasmo.com/)
-
-## Making production build
+## Production build
 
 Run the following:
 
 ```bash
 pnpm build
-# or
-npm run build
 ```
 
-This should create a production bundle for your extension, ready to be zipped and published to the stores.
+### Publishing
 
-## Submit to the webstores
-
-The easiest way to deploy your Plasmo extension is to use the built-in [bpp](https://bpp.browser.market) GitHub action. Prior to using this action however, make sure to build your extension and upload the first version to the store to establish the basic credentials. Then, simply follow [this setup instruction](https://docs.plasmo.com/framework/workflows/submit) and you should be on your way for automated submission!
+Use the built-in [bpp](https://bpp.browser.market) GitHub action. Prior to using this action however, make sure to build your extension and upload the first version to the store to establish the basic credentials. Then, simply follow [this setup instruction](https://docs.plasmo.com/framework/workflows/submit) and you should be on your way for automated submission!
