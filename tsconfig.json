@@ -1,5 +1,5 @@
 {
-  "extends": "plasmo/templates/tsconfig.base",
+  "extends": "./node_modules/plasmo/templates/tsconfig.base.json",
   "exclude": [
     "node_modules"
   ],
@@ -9,10 +9,11 @@
     "./**/*.tsx"
   ],
   "compilerOptions": {
+    "module": "ESNext",
+    "moduleResolution": "bundler",
     "paths": {
-      "~*": [
-        "./*"
-      ]
+      "~*": ["./*"],
+      "@plasmohq/storage": ["./node_modules/@plasmohq/storage/dist/index.d.ts"]
     },
     "baseUrl": "."
   }
