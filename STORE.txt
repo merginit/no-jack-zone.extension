@@ -1,0 +1,17 @@
+NoJack Zone prevents websites from hijacking your browser's keyboard shortcuts. This anti-jackware extension protects essential shortcuts like Ctrl+F, Alt+Left, and Ctrl+C from being overridden by sites. When a site attempts to hijack your shortcuts, NoJack Zone automatically re-jacks control back to you, ensuring your browser functions exactly as intended.
+
+What's included:
+
+● Protection for 20+ essential browser shortcuts (Find, Reload, DevTools, etc.)
+● Guarding of core editing commands (Copy, Paste, Undo, Redo)
+● Prevention of navigation hijacking (Back/Forward buttons)
+● Per-domain whitelist for trusted sites
+● Granular control to toggle specific shortcuts
+● Real-time statistics of prevented hijacking attempts
+
+How it works:
+
+1. Intercepts keyboard events at the window level using high-priority capture phase.
+2. Overrides preventDefault and propagation methods when protected shortcuts are detected.
+3. Monitors website attempts to block browser functionality and automatically "re-jacks" control.
+4. Restores original event behavior in the next tick to ensure smooth browser operation.
