@@ -30,6 +30,9 @@ export const protectedShortcuts: ProtectedShortcut[] = [
   { id: "f5", key: "F5", modifiers: {}, label: "Refresh", category: "browser" },
   { id: "f11", key: "F11", modifiers: {}, label: "Fullscreen", category: "browser" },
   { id: "f12", key: "F12", modifiers: {}, label: "DevTools", category: "browser" },
+  { id: "ctrl-shift-i", key: "i", modifiers: { ctrl: true, shift: true }, label: "DevTools (Inspect)", category: "browser" },
+  { id: "ctrl-shift-j", key: "j", modifiers: { ctrl: true, shift: true }, label: "DevTools (Console)", category: "browser" },
+  { id: "ctrl-shift-c", key: "c", modifiers: { ctrl: true, shift: true }, label: "DevTools (Element)", category: "browser" },
   { id: "escape", key: "Escape", modifiers: {}, label: "Escape", category: "browser" },
 ]
 

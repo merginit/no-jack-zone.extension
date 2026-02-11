@@ -1,4 +1,10 @@
-NoJack Zone prevents websites from hijacking your browser's keyboard shortcuts. This anti-jackware extension protects essential shortcuts like Ctrl+F, Alt+Left, and Ctrl+C from being overridden by sites. When a site attempts to hijack your shortcuts, NoJack Zone automatically re-jacks control back to you, ensuring your browser functions exactly as intended.
+NoJack Zone - Stop Keyboard Hijacking
+
+NoJack Zone prevents websites from hijacking your browser's keyboard shortcuts.
+This anti-jackware extension protects essential shortcuts like Ctrl+F, Alt+Left, and Ctrl+C from being overridden by sites.
+When a site attempts to hijack your shortcuts, NoJack Zone automatically re-jacks control back to you, ensuring your browser functions exactly as intended.
+
+Stop keyboard hijacking. Stop shortcut stealing. Stop jackware.
 
 What's included:
 
@@ -11,7 +17,27 @@ What's included:
 
 How it works:
 
-1. Intercepts keyboard events at the window level using high-priority capture phase.
-2. Overrides preventDefault and propagation methods when protected shortcuts are detected.
-3. Monitors website attempts to block browser functionality and automatically "re-jacks" control.
-4. Restores original event behavior in the next tick to ensure smooth browser operation.
+1. Intercepts keyboard events at the window level using high-priority capture phase
+2. Overrides preventDefault and propagation methods when protected shortcuts are detected
+3. Monitors website attempts to block browser functionality and automatically re-jacks control
+4. Restores original event behavior in the next tick to ensure smooth browser operation
+
+Protected against:
+
+● Keyboard shortcut hijacking (Ctrl+F, Ctrl+W, Ctrl+T, F5, F12)
+● Clipboard hijacking (Ctrl+C, Ctrl+V, Ctrl+X)
+● Navigation hijacking (Alt+Left, Alt+Right)
+● Developer tools blocking (Ctrl+Shift+I, F12)
+● Find-in-page blocking (Ctrl+F)
+● Page reload prevention (Ctrl+R, F5)
+
+Perfect for:
+
+✓ Power users who rely on keyboard shortcuts
+✓ Developers who need guaranteed DevTools access
+✓ Anyone frustrated by sites that block Ctrl+F or copy/paste
+✓ Users who value browser control over website interference
+
+---
+
+keyboard hijacking, shortcut hijacking, anti-jackware, ctrl+f blocking, copy paste blocking, keyboard shortcut protection, prevent preventDefault, browser shortcut blocker, shortcut stealing, keyboard interception
