@@ -186,7 +186,7 @@ function IndexPopup() {
         >
           GitHub
         </a>
-        <span>v0.0.3</span>
+        <span>v0.0.4</span>
       </footer>
     </div>
   )

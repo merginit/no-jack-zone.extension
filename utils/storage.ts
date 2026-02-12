@@ -17,7 +17,7 @@ const storage = new Storage()
 export const defaultSettings: NoJackSettings = {
   enabled: true,
   whitelist: [],
-  enabledShortcuts: protectedShortcuts.map((s) => s.id),
+  enabledShortcuts: protectedShortcuts.filter((s) => s.defaultEnabled).map((s) => s.id),
   stats: {
     totalBlocked: 0,
     lastBlockedDomain: null,
