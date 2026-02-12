@@ -1,7 +1,7 @@
 {
   "name": "no-jack-zone",
   "displayName": "No Jack Zone",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "NoJack Zone prevents websites from hijacking your browser's keyboard shortcuts.",
   "author": "Jonas Fröller",
   "scripts": {

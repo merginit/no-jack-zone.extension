@@ -33,6 +33,15 @@ export const protectedShortcuts: ProtectedShortcut[] = [
   { id: "ctrl-shift-i", key: "i", modifiers: { ctrl: true, shift: true }, label: "DevTools (Inspect)", category: "browser" },
   { id: "ctrl-shift-j", key: "j", modifiers: { ctrl: true, shift: true }, label: "DevTools (Console)", category: "browser" },
   { id: "ctrl-shift-c", key: "c", modifiers: { ctrl: true, shift: true }, label: "DevTools (Element)", category: "browser" },
+  { id: "ctrl-1", key: "1", modifiers: { ctrl: true }, label: "Tab 1", category: "browser" },
+  { id: "ctrl-2", key: "2", modifiers: { ctrl: true }, label: "Tab 2", category: "browser" },
+  { id: "ctrl-3", key: "3", modifiers: { ctrl: true }, label: "Tab 3", category: "browser" },
+  { id: "ctrl-4", key: "4", modifiers: { ctrl: true }, label: "Tab 4", category: "browser" },
+  { id: "ctrl-5", key: "5", modifiers: { ctrl: true }, label: "Tab 5", category: "browser" },
+  { id: "ctrl-6", key: "6", modifiers: { ctrl: true }, label: "Tab 6", category: "browser" },
+  { id: "ctrl-7", key: "7", modifiers: { ctrl: true }, label: "Tab 7", category: "browser" },
+  { id: "ctrl-8", key: "8", modifiers: { ctrl: true }, label: "Tab 8", category: "browser" },
+  { id: "ctrl-9", key: "9", modifiers: { ctrl: true }, label: "Last Tab", category: "browser" },
   { id: "escape", key: "Escape", modifiers: {}, label: "Escape", category: "browser" },
 ]
 

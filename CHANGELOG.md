@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.0.3] - 2026-02-12
+
+- Added `Ctrl+1` through `Ctrl+9` (switch to tab N / last tab) to protected shortcuts.
+
 ## [0.0.2] - 2026-02-11
 
 - Rewrite of the store description in `STORE.txt` for better SEO.
